@@ -1,0 +1,19 @@
+import tkinter
+def update_output():
+    # My nane is Eli, and that was a random genorated address  
+    label.config(text="Name - Eli Villar\n Address - 876 North Rosewood Street Gulfport, MS 39503")
+def quit_bu():
+    window.destroy()
+
+window = tkinter.Tk()
+window.title = ("GUI")
+label = tkinter.Label(window, text="GUI")
+label.pack()
+
+press_button = tkinter.Button(window, text="Show Info", command=update_output)
+press_button.pack()
+
+quit_button = tkinter.Button (window, text="Quit", command=quit_bu)
+quit_button.pack()
+
+window.mainloop()
